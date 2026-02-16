@@ -1,5 +1,5 @@
-<img width="1920" height="1080" alt="Screenshot 2026-02-16 204228" src="https://github.com/user-attachments/assets/8c572021-a7f6-4c63-8ef5-659dc1d2001c" /><img width="1920" height="1080" alt="Screenshot 2026-02-16 204232" src="https://github.com/user-attachments/assets/0af4e1f3-d6d8-4ccd-91df-f5644afcd2d9" /># Belajar-Dasar-Pemrograman-Web
-Ini merupakan hasil Pembelajaran pada Modul Kelas "Belajar Dasar Pemrograman Web"
+# Kelas Belajar Dasar Pemrograman Web
+### Ini Merupakan Hasil dari Pembelajaran pada Modul Kelas "Belajar Dasar Pemrograman Web"
 
 ## WebDasar
 <img width="1920" height="1080" alt="Screenshot 2026-02-16 204209" src="https://github.com/user-attachments/assets/66aa960f-fc9e-4735-95b0-a116f96ee8a3" />
