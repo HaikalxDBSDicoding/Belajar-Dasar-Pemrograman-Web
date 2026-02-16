@@ -1,0 +1,163 @@
+/* Catatan Border & Padding
+1px : 4 Sisi yaitu Atas,Kanan,Bawah,Kiri
+2px 2px : 2 Sisi yaitu Atas,Bawah . Kiri,Kanan
+3px 3px 3px : 3 Sisi yaitu Atas . Kiri dan Kanan . Bawah
+4px 4px 4px 4px : 4 Sisi yaitu Atas . Kanan . Bawah . Kiri (clockwise/arah jarum jam)
+*/
+
+/* Catatan untuk Box Shadow 
+Nilai Pertama : Menentukan tingkat jaraknya antar Kiri dan Kanan (Vertikal)
+Nilai Kedua : Menentukan tingkat jaraknya antar Atas dan Bawah (Horizontal)
+Nilai Ketiga : Menentukan tingkat keburaman bayangan
+Nilai Keempat : Menentukan tingkat sebaran (spread) bayangan
+*/
+
+/* Catatan Border
+1px : 4 Sisi yaitu Kiri Atas, Kanan Atas, Kanan Bawah, Kiri Bawah
+2px 2px: 2 Sisi yaitu Kiri Atas dan Kanan Bawah, Kanan Atas dan Kiri Bawah
+3px 3px 3px: 3 Sisi yaitu Kiri Atas, Kanan Atas dan Kiri Bawah, Kanan Bawah
+4px 4px 4px 4px: 4 Sisi yaitu Kiri Atas, Kanan Atas, Kanan Bawah, Kiri Bawah
+*/
+
+/* Catatan object-fit 
+fill : gambar dipaksa memenuhi kotak
+cover : gambar akan memenuhi seluruh area kotak tanpa jadi gepeng
+none : gambar mempertahankan ukuran aslinya dan tidak peduli dengan ukuran kotak
+contain : Seluruh gambar akan terlihat di dalam kotak tanpa terpotong, tapi mungkin akan ada ruang kosong di pinggirnya.
+*/
+
+/* object-position 
+center : menentukan gambar akan berada pada tengah
+top : menentukan gambar akan berada pada atas
+bottom : menentukan gambar akan berada pada bawah
+*/
+
+/* Catatan nth:child 
+odd : ganjil
+even : genap
+*/
+
+* {
+    box-sizing: border-box;
+}
+
+#content {
+    flex: 5;
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 1rem 2rem;
+}
+
+aside {
+    flex: 1;
+}
+
+header {
+    display: inline;
+}
+
+body {
+    font-family: 'Quicksand', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.jumbotron {
+    font-size: 20px;
+    padding: 60px;
+    background-color: #0a89a5;
+    text-align: center;
+    color: white;
+}
+
+main {
+    padding: 20px;
+    display: flex;
+    gap: 1.5rem;
+}
+
+nav {
+    position: sticky;
+    top: 0;
+    background-color: #00a2c6;
+    padding: 5px;
+}
+
+nav ul {
+    padding-inline: 4rem;
+    display: flex;
+    gap: 2rem;
+}
+
+nav li {
+    list-style-type: none;
+}
+
+h2,
+h3 {
+    color: #00a2c6;
+}
+
+nav a {
+    color: white;
+    font-size: 18px;
+    font-weight: 400;
+    text-decoration: none;
+}
+
+nav a:hover {
+    font-weight: bold;
+}
+
+nav a:active {
+    color: orange;
+}
+
+.feature-image {
+    width: 100%;
+    max-height: 300px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.profile-img {
+    width: 200px;
+}
+
+.card {
+    box-shadow: 0 5px 6px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    padding: 20px;
+}
+
+.profile header {
+    text-align: center;
+}
+
+@media screen and (max-width: 1200px) {
+    main {
+        flex-flow: column nowrap;
+    }
+
+    main aside {
+        align-self: center;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    nav ul {
+        justify-content: center;
+    }
+
+    main aside {
+        align-self: stretch;
+    }
+}
+
+footer {
+    padding: 20px;
+    color: white;
+    background-color: #00a2c6;
+    text-align: center;
+    font-weight: bold;
+}
